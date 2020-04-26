@@ -1,0 +1,50 @@
+{
+  "name": "stacknerds/mtnopenapi",
+  "description": "MtnOpenAPI is a free PHP/Laravel wrapper around MTN's Open API",
+  "license": "MIT",
+  "keywords": [
+    "StackNerds",
+    "MTN",
+    "API",
+    "MTN Open API"
+  ],
+  "authors": [
+    {
+      "name": "Fenn-CS",
+      "email": "normad@stacknerds.com",
+      "homepage": "http://www.stacknerds.me",
+      "role": "Digital Normad :)"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "illuminate/config": "5.2.*",
+    "ramsey/uuid": "^3.9",
+    "guzzlehttp/guzzle": "^6.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.*",
+    "mockery/mockery": "0.*",
+    "symfony/var-dumper": "2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "StackNerds\\MtnOpenAPI\\": "src",
+      "StackNerds\\Library\\": "src/library"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "StackNerds\\MtnOpenAPI\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  },
+  "minimum-stability": "stable"
+}
